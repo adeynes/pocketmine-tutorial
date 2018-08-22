@@ -10,7 +10,8 @@ class PluginBaseExample extends PluginBase
 
     public function onEnable(): void
     {
-        $this->getServer()->getLogger()->log('Enabled!');
+        Cucumber::getInstance();
+        $this->getServer()->getLogger()->info('Enabled!');
     }
 
 }
