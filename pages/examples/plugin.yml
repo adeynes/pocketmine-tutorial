@@ -1,0 +1,28 @@
+name: Slogan
+main: adeynes\Slogan\Slogan
+version: 0.1.0
+api: 3.0.0
+author: adeynes
+
+commands:
+  setmotd:
+    description: "Set the message that will be sent to players when they join"
+    permission: slogan.command.setmotd
+  setstatus:
+    description: "Set the status that will be displayed on the server's query response and as a popup to players"
+    permission: slogan.command.setstatus
+
+permissions:
+  slogan:
+    description: "Allows for the use of all Slogan features"
+    default: op
+    children:
+      slogan.command: "Allows for the use of all Slogan commands"
+      default: op
+      children:
+        slogan.command.setmotd:
+          description: "Allows for setting the server's MOTD"
+          default: op
+        slogan.command.setstatus:
+          description: "Allows for setting the server's status"
+          default: op

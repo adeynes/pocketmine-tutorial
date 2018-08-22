@@ -16,7 +16,6 @@ A PocketMine plugin is inside a directory in the `/plugins` directory of the ser
 
 #### The `src` folder
 By convention, directly below the `src` directory is a directory whose name is your GitHub username. Mine is `adeynes`, so we'll use that. Under that is a directory that is your plugin's name, in our case `Slogan`, which contains your code.
-___
 
 Example structure:
 ```
