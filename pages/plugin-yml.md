@@ -42,4 +42,5 @@ permissions:
 
 ## Slogan's `plugin.yml`
 Putting all this information together, this is what Slogan's `plugin.yml` would hypothetically look like:
-TODO: gist link
+
+<script src="https://gist.github.com/adeynes/36fe7d507067d89f9fc26767bca50d4f.js"></script>
