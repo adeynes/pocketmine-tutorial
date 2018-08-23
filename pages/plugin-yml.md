@@ -23,7 +23,7 @@ commands:
 ```
 
 ## `permissions`
-The `permission` attribute is a list of permissions with a description and a default authorization (usually `true` or `op`, depending on if you want the permission to be given to every player or just OPs). Permissions can be nested, such that if a player has a parent permission, they also have child permissions.
+The `permissions` attribute is a list of permissions with a description and a default authorization (usually `true` or `op`, depending on if you want the permission to be given to every player or just OPs). Permissions can be nested, such that if a player has a parent permission, they also have the child permissions.
 
 ```yaml
 permissions:
@@ -85,4 +85,4 @@ git push origin master
 ```
 ___
 
-Alright, we now have a great `plugin.yml` file with all the information necessary for PocketMine to load our plugin. Except it won't load yet. [First, we need to create the so-called "main class" for our plugin](main-class)
+Alright, we now have a great `plugin.yml` file with all the information necessary for PocketMine to load our plugin. Except it won't load yet. [First, we need to create the so-called "main class" for our plugin.](main-class)

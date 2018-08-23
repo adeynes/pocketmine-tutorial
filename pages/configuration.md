@@ -11,23 +11,22 @@ The directory structure now looks like this with packaged plugins:
 ```
 plugins/
 ├── Slogan.phar
-├── Slogan/
+└── Slogan/
     ├── config.yml
     └── players.sql
 ```
 Or, since PocketMine 3.1.4:
 ```
 plugins/
-├── Slogan.phar
-
+└── Slogan.phar
 plugin_data/
-├── Slogan/
+└── Slogan/
     ├── config.yml
     └── players.sql
 ```
 
 ### Saving resources
-Here's the thing, though: PocketMine won't automatically copy your resources into your plugin's folder. For that, you'll need to call `$this->saveResource('resource name')`. This will copy the resource into the folder, and it will be in the same state as when you were developing your plugin.
+Here's the thing, though: PocketMine won't automatically copy your resources into your plugin's data folder. For that, you'll need to call `$this->saveResource('resource name')`. This will copy the resource into the folder, and it will be in the same state as when you were developing your plugin.
 
 ## Slogan's resources
 Right now, Slogan logs a message to the console when it gets enabled. Let's give server owners the ability to customize that message. We'll have an option in `config.yml` to configure that.
@@ -70,9 +69,9 @@ public function onEnable(): void
     $this->saveDefaultConfig();
     
     // Instead of logging a hardcoded message, we now retrieve the enable-message attribute from the config and log that
-    // $this->getConfig() returns a Config instead, which has a `get` method to retrieve the specified value
+    // $this->getConfig() returns a Config instance, which has a `get` method to retrieve the specified value
     $this->getServer()->getLogger()->notice(
-        $this->getConfig()->get('enable-message)
+        $this->getConfig()->get('enable-message')
     );
 }
 ```
@@ -86,6 +85,7 @@ git commit -m "Add ability to customize enable message"
 git push origin master
 ```
 From now on, you should remind yourself to commit your progress after every significant change (you don't have to push after every commit, you can do that at the end of your coding session).
+
 ___
 
-Each server can now customize the enable message. [Next, we'll add commands so that it can be changed in-game or from the console directly](commands)
+Each server can now customize the enable message. [Next, we'll add commands so that it can be changed in-game or directly from the console.](commands)

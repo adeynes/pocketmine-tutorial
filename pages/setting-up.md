@@ -5,11 +5,11 @@ First of all, you of course need a server to test your plugins. Setting one up i
 
 Next: writing the code for your plugins. PocketMine doesn't require any specific editor, so you can use whatever code editor or IDE you like best. However, PhpStorm is often considered the most complete IDE for PHP and will facilitate your workflow greatly.
 
-You will want to download the latest PocketMine release from the [release page](https://github.com/pmmp/PocketMine-MP/releases) and add that as an include path to your project so that your editor can perform auto-completion for the PocketMine API.
+You will want to download the latest PocketMine release from the [Releases page on GitHub](https://github.com/pmmp/PocketMine-MP/releases) and add that as an include path to your project so that your editor can perform auto-completion for the PocketMine API.
 
 ## Setting up your plugin
 ### Choosing a name
-It's important to pick a good name for your plugin. It needs to be short yet catchy, and you probably don't want it to be the same name as a plugin that already exists (you can browse [Poggit](https://poggit.pmmp.io) to search through publicly-released plugins). For the scope of this tutorial, we'll be making an example plugin called `Slogan`. It'll allow administrators to set welcome messages and statuses for their servers.
+It's important to pick a good name for your plugin. It needs to be short yet catchy, and you probably don't want it to be the same name as a plugin that already exists (you can browse [Poggit](https://poggit.pmmp.io) to search through publicly-released plugins). For this tutorial, we'll be making a plugin called `Slogan`. It'll allow administrators to set welcome messages and statuses for their servers.
 
 ### Plugin structure
 A PocketMine plugin is inside a directory in the `/plugins` directory of the server. At the topmost level of this directory is a `plugin.yml` file that includes information about the plugin, a `src` folder that includes the plugin's code, and an optional `resources` folder that contains files that are not usually PHP code. Examples of these files include config files or `.sql` files.
@@ -47,7 +47,7 @@ cd Slogan
 git init
 ```
 
-We'll then make a `plugin.yml` file and a dummy main file (in our case, `Slogan.php`), both of which you can leave blank. We'll also create our `resources` folder. We'll get to those later.
+We'll then make a `plugin.yml` file and a dummy main file (in our case, `Slogan.php`), both of which you can leave blank. We'll also create our `resources` folder, which can also be left empty. We'll get to those later.
 
 This should be our current directory structure:
 ```

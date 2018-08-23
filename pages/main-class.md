@@ -28,7 +28,7 @@ class Slogan extends PluginBase
 That's it. PocketMine will load this just fine; Slogan is now a fully valid plugin. Except it doesn't do anything.
 
 ## `onLoad()` and `onEnable()`
-As discussed above, `onLoad()` is run when your plugin is loaded, and `onEnable()` when it is enabled. All plugins are loaded by PocketMine before any of them get enabled. For most purposes, you'll want to put startup code in `onEnable()`. Let's edit `Slogan.php` and display a message in the console when Slogan enables.
+As discussed above, `onLoad()` is run when your plugin is loaded, and `onEnable()` when it is enabled. All plugins are loaded by PocketMine before any of them get enabled. For most purposes, you'll want to put startup code in `onEnable()` rather than `onLoad()`. Let's edit `Slogan.php` and display a message in the console when Slogan enables.
 
 ```php
 <?php
@@ -51,7 +51,7 @@ class Slogan extends PluginBase
 }
 ```
 
-When we run our server, Slogan will now output "Slogan has enabled!" when PocketMine enables it. This is version `0.1.0` of our plugin. Congrats!
+When we run our server, Slogan will now output "Slogan has been enabled!" when PocketMine enables it. This is version `0.1.0` of our plugin. Congrats!
 
 Let's commit our changes:
 ```
@@ -61,4 +61,4 @@ git push origin master
 ```
 ___
 
-This is lovely, but what good is a plugin if you can't customize it? [Next, we'll look at how to use configuration files to let server owners change the way Slogan works](configuration)
+This is lovely, but what good is a plugin if you can't customize it? [Next, we'll look at how to use configuration files to let server owners change the way Slogan works.](configuration)
