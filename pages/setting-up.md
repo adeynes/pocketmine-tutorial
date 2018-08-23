@@ -35,7 +35,8 @@ You'll definitely want to use some sort of version control for developing your p
 
 ### Making your first changes locally
 To start, we'll want to initialize a `git` repository in our plugin's folder (the one under the `plugins/` directory of the server) with the following commands:
-```sh
+
+```
 cd path/to/pocketmine
 cd plugins
 mkdir Slogan
@@ -49,7 +50,8 @@ Then, you need to create your repository on GitHub. The name should be your plug
 
 ### Pushing your changes
 Of course, we need to push our changes to GitHub! To do so, we'll run the following commands:
-```sh
+
+```
 git remote add origin https://github.com/username/repository.git # This sets the remote "origin" to the specified GitHub repository. For us, this would be "git remote add origin https://github.com/adeynes/Slogan.git"
 git add * # This adds all your edited files to the staging area
 git commit -m "Descriptive commit message"
