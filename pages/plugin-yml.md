@@ -75,6 +75,14 @@ permissions:
           description: "Allows for setting the server's status"
 default: op
 ```
+
+## Committing our changes
+We've done big progress with Slogan, so it's now time to commit our changes to git and push them to GitHub for the world to see:
+```
+git add *
+git commit -m "Add plugin.yml"
+git push origin master
+```
 ___
 
-Alright, we now have a great `plugin.yml` with all the information necessary for PocketMine to load our plugin. Except it won't load yet. [First, we need to create the so-called "main class" for our plugin](main-class)
+Alright, we now have a great `plugin.yml` file with all the information necessary for PocketMine to load our plugin. Except it won't load yet. [First, we need to create the so-called "main class" for our plugin](main-class)

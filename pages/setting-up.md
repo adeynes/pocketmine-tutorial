@@ -17,7 +17,7 @@ A PocketMine plugin is inside a directory in the `/plugins` directory of the ser
 #### The `src` folder
 By convention, directly below the `src` directory is a directory whose name is your GitHub username. Mine is `adeynes`, so we'll use that. Under that is a directory that is your plugin's name, in our case `Slogan`, which contains your code.
 
-Example structure:
+Example structure (this is what Slogan will look like at the end of the tutorial!):
 ```
 Slogan/
 ├── plugin.yml
@@ -25,17 +25,20 @@ Slogan/
 │   ├── adeynes/
 │       ├── Slogan/
 │           ├── Slogan.php
+│           ├── SloganEventListener.php
+│           └── command/
+│               ├── SetMotdCommand.php
+│               └── SetStatusCommand.php
 └── resources/
     ├── config.yml
-    └── mysql.sql
+    └── players.json
 ```
 
 ## Setting up Git
-You'll definitely want to use some sort of version control for developing your plugins. Many PocketMine developers use `git`, and host their code on GitHub. We'll do that, then.
+You'll definitely want to use some sort of version control for developing your plugins. Many PocketMine developers use Git, and host their code on GitHub. We'll do that, then.
 
 ### Making your first changes locally
-To start, we'll want to initialize a `git` repository in our plugin's folder (the one under the `plugins/` directory of the server) with the following commands:
-
+To start, we'll want to initialize a Git repository in our plugin's folder (the one under the `plugins/` directory of the server) with the following commands:
 ```
 cd path/to/pocketmine
 cd plugins
@@ -43,14 +46,25 @@ mkdir Slogan
 cd Slogan
 git init
 ```
-We'll then make a `plugin.yml` and a dummy main file (in our case, `Slogan.php`) that just contains boilerplate code. We'll get to those later.
+
+We'll then make a `plugin.yml` file and a dummy main file (in our case, `Slogan.php`), both of which you can leave blank. We'll also create our `resources` folder. We'll get to those later.
+
+This should be our current directory structure:
+```
+Slogan/
+├── plugin.yml
+├── src/
+│   └── adeynes/
+│       └── Slogan/
+│           └── Slogan.php
+└── resources/
+```
 
 ### Making a repository on GitHub
 Then, you need to create your repository on GitHub. The name should be your plugin's name, and you don't necessarily need to initialize it with a README.
 
 ### Pushing your changes
-Of course, we need to push our changes to GitHub! To do so, we'll run the following commands:
-
+Of course, we need to push our changes to GitHub. To do so, we'll run the following commands:
 ```
 git remote add origin https://github.com/username/repository.git # This sets the remote "origin" to the specified GitHub repository. For us, this would be "git remote add origin https://github.com/adeynes/Slogan.git"
 git add * # This adds all your edited files to the staging area

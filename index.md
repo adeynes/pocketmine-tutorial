@@ -3,4 +3,7 @@
 It has an API for plugin development, but it is often overwhelming for beginners to get started. This site is a good starting point to get your feet wet with the API.
 
 ## Table of Contents
-I. [Setting up](pages/setting-up)
+I. [Setting up](pages/setting-up)<br>
+II. [`plugin.yml`](pages/plugin-yml)<br>
+III. [The plugin's main class](pages/main-class)<br>
+IV. [Configuration](pages/configuration)<br>
