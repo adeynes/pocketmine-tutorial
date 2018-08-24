@@ -17,9 +17,10 @@ namespace adeynes\Slogan;
 // This use statement means we can just type PluginBase instead of \pocketmine\plugin\PluginBase
 use pocketmine\plugin\PluginBase;
 
+// We make our class final so that it can't be extended: nothing should ever extend a plugin anyways!
 // Extending PluginBase does two things: (1) it allows the plugin to load (plugins must implement the Plugin interface, and PluginBase does that)
 // (2) it gives us access to many methods to make our life easier like getServer() and getConfig()
-class Slogan extends PluginBase
+final class Slogan extends PluginBase
 {
     
 }

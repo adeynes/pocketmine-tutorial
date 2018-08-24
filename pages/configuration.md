@@ -88,4 +88,4 @@ From now on, you should remind yourself to commit your progress after every sign
 
 ___
 
-Each server can now customize the enable message. [Next, we'll add commands so that it can be changed in-game or directly from the console.](commands)
+Each server can now customize the enable message. [Next, let's look at events to have Slogan send the MOTD to players when they join.](events)

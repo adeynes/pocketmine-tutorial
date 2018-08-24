@@ -22,8 +22,8 @@ Example structure (this is what Slogan will look like at the end of the tutorial
 Slogan/
 ├── plugin.yml
 ├── src/
-│   ├── adeynes/
-│       ├── Slogan/
+│   └── adeynes/
+│       └── Slogan/
 │           ├── Slogan.php
 │           ├── SloganEventListener.php
 │           └── command/

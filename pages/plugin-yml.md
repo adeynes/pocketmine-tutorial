@@ -73,7 +73,7 @@ permissions:
           default: op
         slogan.command.setstatus:
           description: "Allows for setting the server's status"
-default: op
+          default: op
 ```
 
 ## Committing our changes
